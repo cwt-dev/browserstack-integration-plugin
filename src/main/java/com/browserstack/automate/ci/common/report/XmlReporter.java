@@ -19,6 +19,12 @@ import java.util.Map;
  * @author Anirudha Khanna
  */
 public class XmlReporter {
+  public static void main(String[] args) throws IOException {
+    parse(new File(
+//            "/Users/eladsulami/Downloads/browserstack-integration-plugin-df733f577daab64d2b4cf44c34a134eaa9f975fb/src/test/resources/REPORT-com.browserstack.automate.application.tests.TestCaseWithFourUniqueSessions.xml"
+            "/Users/eladsulami/Downloads/browserstack-integration-plugin-df733f577daab64d2b4cf44c34a134eaa9f975fb/src/test/resources/REPORT-CHROME_67.0.3396.62_WINDOWS_oauth-token-tests.xml"
+    ));
+  }
 
   public static Map<String, String> parse(File f) throws IOException {
     Map<String, String> testSessionMap = new HashMap<String, String>();
@@ -33,6 +39,9 @@ public class XmlReporter {
     }
 
     Element documentElement = doc.getDocumentElement();
+    if (documentElement.getTagName().equals("testsuites")){
+      documentElement = ((Element)documentElement.getElementsByTagName("testsuite").item(0));
+    }
     NodeList testCaseNodes = documentElement.getElementsByTagName("testcase");
 
     for (int i = 0; i < testCaseNodes.getLength(); i++) {
@@ -40,8 +49,11 @@ public class XmlReporter {
 
       if (n.getNodeType() == Node.ELEMENT_NODE) {
         Element el = (Element) n;
-        if (el.hasAttribute("id") && el.hasChildNodes()) {
+        if (el.hasChildNodes()) {
           String testId = el.getAttribute("id");
+          if (testId == null || testId.equals("")){
+            testId = el.getAttribute("classname") + "-" + i + "{0}";
+          }
           NodeList sessionNode = el.getElementsByTagName("session");
           if (sessionNode.getLength() > 0
               && sessionNode.item(0).getNodeType() == Node.ELEMENT_NODE) {
