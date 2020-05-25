@@ -1,5 +1,6 @@
 package com.browserstack.automate.ci.common.report;
 
+import com.browserstack.automate.ci.common.AutomateTestCase;
 import com.browserstack.automate.ci.common.model.BrowserStackSession;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -21,8 +22,9 @@ import java.util.Map;
 public class XmlReporter {
   public static void main(String[] args) throws IOException {
     parse(new File(
-//            "/Users/eladsulami/Downloads/browserstack-integration-plugin-df733f577daab64d2b4cf44c34a134eaa9f975fb/src/test/resources/REPORT-com.browserstack.automate.application.tests.TestCaseWithFourUniqueSessions.xml"
-            "/Users/eladsulami/Downloads/browserstack-integration-plugin-df733f577daab64d2b4cf44c34a134eaa9f975fb/src/test/resources/REPORT-CHROME_67.0.3396.62_WINDOWS_oauth-token-tests.xml"
+//            "/Users/eladsulami/browserstack-integration-plugin/src/test/resources/REPORT-com.browserstack.automate.application.tests.TestCaseWithFourUniqueSessions.xml"
+//            "/Users/eladsulami/browserstack-integration-plugin/src/test/resources/REPORT-CHROME_67.0.3396.62_WINDOWS_oauth-token-tests.xml"
+            "/Users/eladsulami/browserstack-integration-plugin/src/test/resources/REPORT-CHROME_77.0.3865.75_WINDOWS_HomeCards.xml"
     ));
   }
 
@@ -52,7 +54,7 @@ public class XmlReporter {
         if (el.hasChildNodes()) {
           String testId = el.getAttribute("id");
           if (testId == null || testId.equals("")){
-            testId = el.getAttribute("classname") + "-" + i + "{0}";
+            testId = getDisplayName(el);
           }
           NodeList sessionNode = el.getElementsByTagName("session");
           if (sessionNode.getLength() > 0
@@ -71,5 +73,20 @@ public class XmlReporter {
     }
 
     return testSessionMap;
+  }
+
+  private static String getDisplayName(Element testCase){
+    String testClassName = testCase.getAttribute("classname");
+    String nameAttr = testCase.getAttribute("name");
+    if (nameAttr.contains(".")) {
+      testClassName = nameAttr.substring(0, nameAttr.lastIndexOf(46));
+      nameAttr = nameAttr.substring(nameAttr.lastIndexOf(46) + 1);
+    }
+
+
+    return testClassName +
+            "." +
+            AutomateTestCase.stripTestParams(nameAttr) +
+                   "{0}";
   }
 }
