@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="3">
+
+  <testsuite name="tests.flightBooking.flightBooking"
+    errors="1" failures="1" hostname="" id="" package="flightBooking" skipped="0"
+    tests="3" time="66.47" timestamp="">
+  
+    <testcase name="step 1 - search for a flight" classname="tests.flightBooking.flightBooking" time="28.66" assertions="18">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="step 2 - Check stops filter" classname="tests.flightBooking.flightBooking" time="20.38" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Failed [ok]: (Check if first result stops contains: &#39;NON-STOP&#39;) - expected &#34;true&#34; but got: &#34;false&#34; (undefinedms)">    at NightwatchAPI.results.waitForElementPresent.waitForElementNotPresent.waitForElementPresent.waitAndClick.pause.getText.waitAndClick.waitAndClick.pause.getText.result (/var/cache/jenkins/web-automation/Web-AirsanityonintegrationOrca/automation/apps/air/tests/flightBooking/steps.js:69:24)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+
+    <failure message="    at NightwatchAPI.results.waitForElementPresent.waitForElementNotPresent.waitForElementPresent.waitAndClick.pause.getText.waitAndClick.waitAndClick.pause.getText.result (/var/cache/jenkins/web-automation/Web-AirsanityonintegrationOrca/automation/apps/air/tests/flightBooking/steps.js:69:24)">    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+    </testcase>
+  
+    <testcase name="step 3 - Check hours slider filter" classname="tests.flightBooking.flightBooking" time="17.42" assertions="9">
+
+    
+
+    
+
+    
+
+    
+
+    
+<system-out>[[ATTACHMENT|/var/cache/jenkins/web-automation/Web-AirsanityonintegrationOrca/automation/output/screenshots/tests/flightBooking/flightBooking/step-3---Check-hours-slider-filter_ERROR_May-25-2020-095051-GMT+0000-(Coordinated-Universal.png]]</system-out>
+    
+<system-out>[[ATTACHMENT|/var/cache/jenkins/web-automation/Web-AirsanityonintegrationOrca/automation/output/screenshots/tests/flightBooking/flightBooking/step-3---Check-hours-slider-filter_ERROR_May-25-2020-095055-GMT+0000-(Coordinated-Universal.png]]</system-out>
+    
+
+    
+<system-out>[[ATTACHMENT|/var/cache/jenkins/web-automation/Web-AirsanityonintegrationOrca/automation/output/screenshots/tests/flightBooking/flightBooking/step-3---Check-hours-slider-filter_ERROR_May-25-2020-095058-GMT+0000-(Coordinated-Universal.png]][[ATTACHMENT|/var/cache/jenkins/web-automation/Web-AirsanityonintegrationOrca/automation/output/screenshots/tests/flightBooking/flightBooking/step-3---Check-hours-slider-filter_FAILED_May-25-2020-095058-GMT+0000-(Coordinated-Universal.png]]</system-out>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        TimeoutError: An error occurred while running .click() command on &lt;Element [name=@logoutButton]&gt;:   (Session info: chrome=77.0.3865.75),  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information),Command duration or timeout: 139 milliseconds,Build info: version: &#39;2.53.0&#39;, revision: &#39;35ae25b&#39;, time: &#39;2016-03-15 17:00:58&#39;,System info: host: &#39;185-200-101-17&#39;, ip: &#39;185.200.101.17&#39;, os.name: &#39;windows&#39;, os.arch: &#39;x86&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_181&#39;,Driver info: org.openqa.selenium.chrome.ChromeDriver,Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:1620}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Windows\proxy\scoped_dir6472_1188728566}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.75, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}],Session ID: b0ac5a538ff4df14c83a4a2071493b66; element click intercepted: Element &lt;a class=&#34;ToolTipNavItem__NavWithDescription-sc-2bc66x-0 iIQPms&#34; data-testid=&#34;header-logout&#34; aria-label=&#34;Log Out&#34; withorder=&#34;0&#34; withborder=&#34;true&#34; tabindex=&#34;0&#34; href=&#34;/logout#/&#34;&gt;...&lt;/a&gt; is not clickable at point (1681, 255). Other element would receive the click: &lt;div data-testid=&#34;base-modal-background&#34; aria-modal=&#34;true&#34; role=&#34;dialog&#34; class=&#34;ModalBackground__BaseModalBackground-ap76x-0 ikFcqc&#34;&gt;...&lt;/div&gt;
+   {&#34;status&#34;:-1,&#34;state&#34;:&#34;unhandled error&#34;,&#34;value&#34;:{&#34;systemInformation&#34;:&#34;System info: host: &#39;185-200-101-17&#39;, ip: &#39;185.200.101.17&#39;, os.name: &#39;windows&#39;, os.arch: &#39;x86&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_181&#39;&#34;,&#34;message&#34;:&#34;element click intercepted: Element &lt;a class=\&#34;ToolTipNavItem__NavWithDescription-sc-2bc66x-0 iIQPms\&#34; data-testid=\&#34;header-logout\&#34; aria-label=\&#34;Log Out\&#34; withorder=\&#34;0\&#34; withborder=\&#34;true\&#34; tabindex=\&#34;0\&#34; href=\&#34;/logout#/\&#34;&gt;...&lt;/a&gt; is not clickable at point (1681, 255). Other element would receive the click: &lt;div data-testid=\&#34;base-modal-background\&#34; aria-modal=\&#34;true\&#34; role=\&#34;dialog\&#34; class=\&#34;ModalBackground__BaseModalBackground-ap76x-0 ikFcqc\&#34;&gt;...&lt;/div&gt;&#34;,&#34;error&#34;:[&#34;  (Session info: chrome=77.0.3865.75)&#34;,&#34;  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)&#34;,&#34;Command duration or timeout: 139 milliseconds&#34;,&#34;Build info: version: &#39;2.53.0&#39;, revision: &#39;35ae25b&#39;, time: &#39;2016-03-15 17:00:58&#39;&#34;,&#34;System info: host: &#39;185-200-101-17&#39;, ip: &#39;185.200.101.17&#39;, os.name: &#39;windows&#39;, os.arch: &#39;x86&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_181&#39;&#34;,&#34;Driver info: org.openqa.selenium.chrome.ChromeDriver&#34;,&#34;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:1620}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\\Windows\\proxy\\scoped_dir6472_1188728566}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.75, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#34;,&#34;Session ID: b0ac5a538ff4df14c83a4a2071493b66&#34;]},&#34;errorStatus&#34;:13,&#34;error&#34;:&#34;element click intercepted: Element &lt;a class=\&#34;ToolTipNavItem__NavWithDescription-sc-2bc66x-0 iIQPms\&#34; data-testid=\&#34;header-logout\&#34; aria-label=\&#34;Log Out\&#34; withorder=\&#34;0\&#34; withborder=\&#34;true\&#34; tabindex=\&#34;0\&#34; href=\&#34;/logout#/\&#34;&gt;...&lt;/a&gt; is not clickable at point (1681, 255). Other element would receive the click: &lt;div data-testid=\&#34;base-modal-background\&#34; aria-modal=\&#34;true\&#34; role=\&#34;dialog\&#34; class=\&#34;ModalBackground__BaseModalBackground-ap76x-0 ikFcqc\&#34;&gt;...&lt;/div&gt;&#34;,&#34;httpStatusCode&#34;:500}
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

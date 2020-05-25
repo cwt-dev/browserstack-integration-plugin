@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites errors="0" failures="0" tests="19">
+  <testsuite name="oauth.oauth-token-tests" errors="0" failures="0" hostname="" id="" package="oauth" skipped="0" tests="19" time="310.0" timestamp="Sun, 24 May 2020 14:34:55 GMT">
+    <testcase name="PCKE - Validate AccessToken CwtToGoOauthClient" classname="oauth.oauth-token-tests" time="11.75" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - RefreshToken CwtToGoOauthClient" classname="oauth.oauth-token-tests" time="18.43" assertions="6">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate AccessToken cwtTogoOAuthClientLimitedExpirationA" classname="oauth.oauth-token-tests" time="16.73" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate RefreshToken cwtTogoOAuthClientLimitedExpirationA" classname="oauth.oauth-token-tests" time="16.27" assertions="6">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate AccessToken cwtTogoOAuthClientLimitedExpirationB" classname="oauth.oauth-token-tests" time="19.98" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate RefreshToken - cwtTogoOAuthClientLimitedExpirationB" classname="oauth.oauth-token-tests" time="16.44" assertions="6">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate AccessToken - cwtTogoOAuthClientLimitedExpirationC" classname="oauth.oauth-token-tests" time="15.62" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate RefreshToken - cwtTogoOAuthClientLimitedExpirationC" classname="oauth.oauth-token-tests" time="19.46" assertions="6">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate AccessToken - cwtTogoOAuthClientLimitedExpirationD" classname="oauth.oauth-token-tests" time="15.17" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate RefreshToken - cwtTogoOAuthClientLimitedExpirationD" classname="oauth.oauth-token-tests" time="17.15" assertions="6">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate AccessToken - cwtTogoOAuthClientLimitedExpirationE" classname="oauth.oauth-token-tests" time="15.70" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate RefreshToken - cwtTogoOAuthClientLimitedExpirationE" classname="oauth.oauth-token-tests" time="15.71" assertions="6">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate AccessToken - cwtTogoOAuthClientLimitedExpirationF" classname="oauth.oauth-token-tests" time="14.96" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE - Validate RefreshToken - cwtTogoOAuthClientLimitedExpirationF" classname="oauth.oauth-token-tests" time="15.71" assertions="6">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="PCKE Validate AccessToken - myCwtWeb" classname="oauth.oauth-token-tests" time="15.55" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="Login flow cwtTogo - expired user" classname="oauth.oauth-token-tests" time="15.44" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="Login flow cwtTogo- expired sub" classname="oauth.oauth-token-tests" time="17.09" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="Login flow myCwtPortal- expired user" classname="oauth.oauth-token-tests" time="15.99" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+    <testcase name="Login flow myCwtPortal - expired sub" classname="oauth.oauth-token-tests" time="16.80" assertions="5">
+      <session>87967d7dabaa616178d5b833f027a047d50e557a</session>
+    </testcase>
+  </testsuite>
+</testsuites>
