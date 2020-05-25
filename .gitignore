@@ -22,3 +22,6 @@ hs_err_pid*
 .project
 .settings/
 /bin/
+.idea
+browserstack.err
+*.iml
