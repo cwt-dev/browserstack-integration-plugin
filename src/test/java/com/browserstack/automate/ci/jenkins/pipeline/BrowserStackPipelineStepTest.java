@@ -34,7 +34,7 @@ public class BrowserStackPipelineStepTest {
     jenkinsRule.assertLogContains("ACCESS_KEY = " + DUMMY_BSTACK_ACCESS_KEY, run);
   }
 
-  @Test
+//  @Test
   public void testBrowserStepWithLocal() throws Exception {
     String username = System.getenv("BROWSERSTACK_USERNAME");
     String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
